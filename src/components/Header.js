@@ -18,8 +18,10 @@ const Header = () => {
         ghost={false}
         extra={[
           <>
+          <Link to="/">
           <img src={Mix3d} className="logo"></img>
           <div className='logo-text'>Mix3d Clothing</div>
+          </Link>
           <Search
               placeholder="Find A Product"
               enterButton
@@ -52,7 +54,7 @@ const Header = () => {
       <Space size={"middle"}>
         <Space size={"small"} style={{fontWeight:"bold"}}>
           <MenuOutlined />
-          Categories
+          Designers
         </Space>
         {categories.map((e) =>{
           return(

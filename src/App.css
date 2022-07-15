@@ -1,7 +1,7 @@
 @import '~antd/dist/antd.css';
 
 .ant-page-header {
-  background-color: #131921;
+  background-color: #000000;
 }
 
 .ant-page-header-heading{
@@ -18,8 +18,8 @@
 }
 
 .ant-input-search-button{
-  background-color: #fdb13f;
-  border-color: #fdb13f;
+  background-color: #000000;
+  border-color: #ffffff;
 }
 
 .ant-input-search-button:hover{
@@ -31,10 +31,11 @@
 .login{
   padding: 3px 30px;
   font-weight: bold;
-  background-color: #fdb13f ;
-  border-color: #fdb13f;
-  border: solid 2px #fdb13f;
+  background-color: #000000 ;
+  border-color: #ffffff;
+  border: solid 2px #ffffff;
   color: white;
+  border-radius: 25px;
 }
 
 .login:hover{

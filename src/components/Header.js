@@ -19,7 +19,7 @@ const Header = () => {
         extra={[
           <>
           <img src={Mix3d} className="logo"></img>
-          <img src={BookStore} className="logo"></img>
+          <div className='logo-text'>Mix3d Clothing</div>
           <Search
               placeholder="Find A Product"
               enterButton

@@ -5,7 +5,7 @@ import Spidey4 from "./images/spiderman4.png";
 import Dictionary from "./images/oxford.png";
 
 export const books = {
-  Comics: [
+  "Miggy Pedoroso": [
     {
       name: "The Amazing Spiderman By Nick Spencer Vol. 1: Back To Basics (MARVEL ORIGINAL COMIC)",
       price: 1.99,
@@ -39,7 +39,7 @@ export const books = {
         "When Kraven returns, Spider-Man becomes the hunted! Sergei Kravinoff and his minions have been kidnapping animal-themed superhumans for months, and they need one more to complete the collection: the Spider. But what does Kraven want with all of them?! In Central Park, the prey is let loose, and the hunt begins - but Kraven isn't the one in pursuit. Who has Spidey in their crosshairs?",
     },
   ],
-  Dictionaries: [
+  "Virginia Estrada": [
     {
       name: "Oxford English Dictionary (3rd Edition)",
       price: 65.29,

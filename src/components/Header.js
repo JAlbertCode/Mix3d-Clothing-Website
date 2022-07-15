@@ -2,7 +2,7 @@ import { PageHeader, Button, Input, Space, Badge } from 'antd';
 import { useMoralis } from "react-moralis";
 import { Link } from 'react-router-dom';
 import './Header.css'
-import Amazon from "../images/logo.png";
+import Mix3d from "../images/mix3d.png";
 import USA from "../images/usa.png";
 import BookStore from "../images/bookstore.png";
 import {ShoppingCartOutlined, MenuOutlined} from "@ant-design/icons";
@@ -18,7 +18,7 @@ const Header = () => {
         ghost={false}
         extra={[
           <>
-          <img src={Amazon} className="logo"></img>
+          <img src={Mix3d} className="logo"></img>
           <img src={BookStore} className="logo"></img>
           <Search
               placeholder="Find A Product"

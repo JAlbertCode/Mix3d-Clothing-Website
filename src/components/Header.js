@@ -38,7 +38,7 @@ const Header = () => {
               
               <Badge count={0} showZero>
                 <span className="header-buttons">
-                  <ShoppingCartOutlined className="header-icon" />
+                  <ShoppingCartOutlined />
                   Cart
                 </span>
               </Badge>

@@ -7,6 +7,7 @@ import Purchase from '../components/Purchase';
 const Product = () => {
   
   let {state: book} = useLocation();
+  console.log(book);
   return (
   <>
   <div className="container">

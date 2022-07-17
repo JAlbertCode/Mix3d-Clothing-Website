@@ -49,3 +49,12 @@
   border: solid 2px white;
   color: white;
 }
+
+.modal {
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}

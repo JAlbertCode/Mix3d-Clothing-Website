@@ -14,10 +14,11 @@ function Purchase({book}) {
     // Get The Price of MATIC
 
     const options = {
-      address: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+      address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
       chain: "eth"
     };
     const price = await Moralis.Web3API.token.getTokenPrice(options);
+    console.log(price);
     const priceMatic = book.price / price.usdPrice;
     
     // Send Matic to book store owenr address

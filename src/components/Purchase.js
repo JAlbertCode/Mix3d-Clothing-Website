@@ -70,13 +70,13 @@ function Purchase({book}) {
     </Button>
       }
       
-      <Modal className='modal'
+      <Modal className='modal' 
         title="Purchase Product"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={()=>setIsModalVisible(false)}
       >
-        <div style={{ display: "flex" }}>
+        <div className='modal' style={{ display: "flex" }}>
           <img src={book.image} alt="product" style={{ width: "200px" }}></img>
           <div>
             <h3>{book.name}</h3>

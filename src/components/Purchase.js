@@ -11,35 +11,35 @@ function Purchase({book}) {
 
   const handleOk = async () => {
 
-    // Get The Price of MATIC
+    // Get The Price of ETH
 
-    const options = {
-      address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-      chain: "eth"
-    };
-    const price = await Moralis.Web3API.token.getTokenPrice(options);
-    console.log(price);
-    const priceMatic = book.price / price.usdPrice;
+    // const options = {
+    //   address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    //   chain: "eth"
+    // };
+    // const price = await Moralis.Web3API.token.getTokenPrice(options);
+    // console.log(price);
+    // const priceEth = book.price / price.usdPrice;
     
-    // Send Matic to book store owenr address
+    // // Send ETH to book store owner address
 
-    const options1 = {
-      type: "native", 
-      amount: Moralis.Units.ETH(priceMatic), 
-      receiver: "xxxxx"
-    }
-    let result = await Moralis.transfer(options1)
+    // const options1 = {
+    //   type: "native", 
+    //   amount: Moralis.Units.ETH(priceEth), 
+    //   receiver: "0xfe2a99674371ac73ea35B547F706155C2bf9E1e7"
+    // }
+    // let result = await Moralis.transfer(options1)
 
 
     //Save Transaction Details to DB
-    const Transaction = Moralis.Object.extend("Transaction");
-    const transaction = new Transaction();
+    // const Transaction = Moralis.Object.extend("Transaction");
+    // const transaction = new Transaction();
 
-    transaction.set("Customer", account);
-    transaction.set("Delivery", delivery);
-    transaction.set("Product", book.name);
+    // transaction.set("Customer", account);
+    // transaction.set("Delivery", delivery);
+    // transaction.set("Product", book.name);
 
-    transaction.save()
+    // transaction.save()
     setIsModalVisible(false);
   }
 
